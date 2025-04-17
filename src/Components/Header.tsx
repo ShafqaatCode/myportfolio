@@ -79,7 +79,7 @@ function Header() {
                     <MenuItem><MenuLink className='contact-btn' href='#about'>Contact</MenuLink></MenuItem>
                 </MenuList>
 
-                <Logo src={ThemeLogo}  />
+                <Logo src={ThemeLogo} />
 
 
             </Nav>
