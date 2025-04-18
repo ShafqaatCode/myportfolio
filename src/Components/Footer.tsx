@@ -13,7 +13,7 @@ const FooterContainer = styled.footer`
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    min-height:300px;
     height: 400px;
     background-color: #26313f;
 
@@ -32,13 +32,16 @@ const Menu = styled.ul`
     cursor: pointer;
     /* border: 2px solid red; */
     text-align: center;
-    width: 100%;
+    width: auto;
 
 `
 
 const MenuItem = styled.li`
-    font-size: 24px;
-    font-weight: 800px;
+    
+    
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
     
 
 `
@@ -48,12 +51,13 @@ cursor: pointer;
 width: 80px;
 height: auto;
 text-align: center;
+
     
 `
 
 const Para = styled.p`
     margin: 10px 0;
-    padding: 10px;
+    
     text-align: center;
     color: #a9a9a9;
     font-size: 20px;
@@ -62,28 +66,34 @@ const Para = styled.p`
     border-top: 2px solid #4a5058;
 `
 
+
+const IconsContainer = styled.div`
+    text-align: center;
+    /* border: 2px solid red; */
+`
+
 const Footer = () => {
-  return (
-   <FooterContainer>
-        <img src={LogoImg} alt="Logo" />
-        <Menu>
-            <MenuItem>About</MenuItem>
-            <MenuItem>Projects</MenuItem>
-            <MenuItem>Contact</MenuItem>
-        </Menu>
+    return (
+        <FooterContainer>
+            <img src={LogoImg} alt="Logo" />
+            <Menu>
+                <MenuItem>About</MenuItem>
+                <MenuItem>Projects</MenuItem>
+                <MenuItem>Contact</MenuItem>
+            </Menu>
 
-        <div>
-            <SocialIcons src={twittericon} />
-            <SocialIcons src={GitHubIcon} />
-            <SocialIcons src={twittericon} />
-            <SocialIcons src={LinkedinIcon} />
-        </div>
+            <IconsContainer>
+                <SocialIcons src={twittericon} />
+                <SocialIcons src={GitHubIcon} />
+                <SocialIcons src={twittericon} />
+                <SocialIcons src={LinkedinIcon} />
+            </IconsContainer>
 
-        <div>
-            <Para>© 2023 Niirod. All Rights Reserved.</Para>
-        </div>
-   </FooterContainer>
-  )
+            <div>
+                <Para>© 2023 Niirod. All Rights Reserved.</Para>
+            </div>
+        </FooterContainer>
+    )
 }
 
 export default Footer
