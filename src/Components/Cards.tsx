@@ -123,10 +123,48 @@ border-radius: 10px;
 
 `
 
+const Intro = styled.div`
+    color: white;
+    font-size: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+`
+
+const Button = styled.button`
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #55e5a4;
+    color: #55e5a4;
+    border-radius: 0;
+    padding: 10px 30px;
+    margin: 0 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #55e5a4;
+        color: black;
+    }
+`
+
 
 
 function Cards() {
     return (
+        <>
+
+        <Intro>
+            <h1>Projects</h1>
+            <div className="btns">
+                <Button>All Projects</Button>
+                <Button>FrontEnd</Button>
+                <Button>BackEnd</Button>
+            </div>
+        </Intro>
+       
         <SuperCard>
             <CardContainer>
                 <Card>
@@ -246,6 +284,8 @@ function Cards() {
             </CardContainer>
 
         </SuperCard>
+
+        </>
     )
 }
 
