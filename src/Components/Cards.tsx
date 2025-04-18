@@ -26,6 +26,11 @@ const Card = styled.div`
     @media (max-width: 700px) {
         max-width: 350px;
         align-items: center;
+
+        h1{
+            font-size: 30px !important;
+            /* color:red !important; */
+        }
     }
 
 
@@ -121,6 +126,12 @@ border-radius: 10px;
     gap:20px;
     flex-wrap: wrap;
     margin: auto;
+
+    @media (max-width:700px) {
+        justify-content: center;
+        text-align: center;
+        /* border: 2px solid red; */
+    }
 
 `
 
