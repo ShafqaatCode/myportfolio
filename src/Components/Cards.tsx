@@ -23,8 +23,9 @@ const Card = styled.div`
     border-radius: 10px;
     background-color: #26313F;
 
-    @media (max-width: 600px) {
-        max-width: 400px;
+    @media (max-width: 700px) {
+        max-width: 350px;
+        align-items: center;
     }
 
 
