@@ -13,7 +13,7 @@ const CardContainer = styled.div`
 `
 
 const Card = styled.div`
-     height: 680px;
+     height: 700px;
      margin:50px  auto;
      text-align: center;
     width: 540px;
