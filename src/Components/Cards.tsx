@@ -234,8 +234,7 @@ const Cards: React.FC = () =>  {
                     </div>
                     <div className="content">
                         <h1>Food Website</h1>
-                        <p>My project involved developing a real estate price prediction system. I trained a machine
-                            learning model on data and built a frontend using React with a FastAPI backend to provide
+                        <p>I Worked on Landing Page. Which have different sections representing the structure of Website. l on data and built a frontend using React with a FastAPI backend to provide
                             accurate price estimates.
 
                         </p>
@@ -263,8 +262,7 @@ const Cards: React.FC = () =>  {
                     </div>
                     <div className="content">
                         <h1>Expense Tracker App</h1>
-                        <p>My project involved developing a real estate price prediction system. I trained a machine
-                            learning model on data and built a frontend using React with a FastAPI backend to provide
+                        <p>This expense tracker application, developed using HTML, CSS, and JavaScript, enables users to record expenses with descriptions and categories frontend using React with a FastAPI backend to provide
                             accurate price estimates.
 
                         </p>
@@ -292,9 +290,7 @@ const Cards: React.FC = () =>  {
                     </div>
                     <div className="content">
                         <h1>Weather app</h1>
-                        <p>My project involved developing a real estate price prediction system. I trained a machine
-                            learning model on data and built a frontend using React with a FastAPI backend to provide
-                            accurate price estimates.
+                        <p>This weather app, built with HTML, CSS, and JavaScript, leverages both a weather API and a global location API to provide accurate, real-time weather information for any location worldwide 
 
                         </p>
                     </div>
