@@ -13,6 +13,23 @@ const HeroContainer = styled.div`
 
     @media (max-width:700px) {
         flex-direction: column;
+
+       
+h3{
+    color: white;
+    /* border: 2px solid red; */
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 33px !important;
+}
+p{  font-weight: 400;
+    font-size: 20px !important;
+    line-height: 1.4;
+    color: #a9a9a9;
+}
     }
 
     h1{
@@ -28,7 +45,7 @@ h3{
     font-weight: 700;
     font-size: 22px;
 }
-p{  font-weight: 500;
+p{  font-weight: 400;
     font-size: 22px;
     line-height: 1.4;
     color: #a9a9a9;
