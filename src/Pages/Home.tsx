@@ -1,6 +1,7 @@
 import About from "../Components/About"
 import Hero from "../Components/Hero"
 import Cards from "../Components/Cards"
+import Form from "../Components/Form"
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
     <Hero />
     <About />
     <Cards />
+    <Form />
     </>
   )
 }
