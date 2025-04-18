@@ -128,8 +128,8 @@ function Header() {
                 </Hamburger>
                 <MenuList $open={menuOpen}>
                     <MenuItem><MenuLink href='#about'>About</MenuLink></MenuItem>
-                    <MenuItem><MenuLink href='#about'>Projects</MenuLink></MenuItem>
-                    <MenuItem><MenuLink className='contact-btn' href='#about'>Contact</MenuLink></MenuItem>
+                    <MenuItem><MenuLink href='#Projects'>Projects</MenuLink></MenuItem>
+                    <MenuItem><MenuLink className='contact-btn' href='#contact'>Contact</MenuLink></MenuItem>
                 </MenuList>
 
                 <Logo className="ThemeLogo" src={ThemeLogo} />

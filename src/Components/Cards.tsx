@@ -187,7 +187,7 @@ function Cards() {
     return (
         <>
 
-        <Intro>
+        <Intro id="Projects">
             <h1>Projects</h1>
             <BtnContainer className="btns">
                 <Button>All Projects</Button>

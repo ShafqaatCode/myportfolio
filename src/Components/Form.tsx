@@ -47,6 +47,11 @@ const ContactHeading = styled.h1`
     font-weight: 500;
     text-align: center;
     margin: 50px;
+
+    @media (max-width: 786px)
+    {
+        font-size: 30px;
+    }
 `
 
 const RightSide = styled.div`
@@ -110,7 +115,7 @@ const ContactBtns = styled.button`
 
 function Form() {
     return (
-        <SuperContainer>
+        <SuperContainer id="contact">
             <ContactHeading>Get In Touch</ContactHeading>
             <ContactContainer>
 

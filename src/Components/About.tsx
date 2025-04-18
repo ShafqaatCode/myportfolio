@@ -94,7 +94,7 @@ const LanguageIcons = styled.div`
 
 function About() {
     return (
-        <AboutContainer>
+        <AboutContainer id="about">
             <LeftSide>
                 <img src={Vector} alt="Main Img" />
             </LeftSide>
