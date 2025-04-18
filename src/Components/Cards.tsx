@@ -233,7 +233,7 @@ const Cards: React.FC = () =>  {
                         <img src={FoodUi} alt="" />
                     </div>
                     <div className="content">
-                        <h1>Real Estate analysis</h1>
+                        <h1>Food Website</h1>
                         <p>My project involved developing a real estate price prediction system. I trained a machine
                             learning model on data and built a frontend using React with a FastAPI backend to provide
                             accurate price estimates.
@@ -262,7 +262,7 @@ const Cards: React.FC = () =>  {
                         <img src={ExpenseImg} alt="" />
                     </div>
                     <div className="content">
-                        <h1>Real Estate analysis</h1>
+                        <h1>Expense Tracker App</h1>
                         <p>My project involved developing a real estate price prediction system. I trained a machine
                             learning model on data and built a frontend using React with a FastAPI backend to provide
                             accurate price estimates.
@@ -291,7 +291,7 @@ const Cards: React.FC = () =>  {
                         <img src={WeatherImg} alt="" />
                     </div>
                     <div className="content">
-                        <h1>Real Estate analysis</h1>
+                        <h1>Weather app</h1>
                         <p>My project involved developing a real estate price prediction system. I trained a machine
                             learning model on data and built a frontend using React with a FastAPI backend to provide
                             accurate price estimates.
