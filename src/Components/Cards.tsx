@@ -9,6 +9,7 @@ import ExpenseImg from "../assets/expense.png"
 
 const CardContainer = styled.div`
     border-radius: 20px;
+  
     
 `
 
@@ -22,8 +23,8 @@ const Card = styled.div`
     border-radius: 10px;
     background-color: #26313F;
 
-    @media (max-width: 700px) {
-        max-width: 420px;
+    @media (max-width: 600px) {
+        max-width: 400px;
     }
 
 
