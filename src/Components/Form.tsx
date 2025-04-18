@@ -36,17 +36,22 @@ const ContactHeading = styled.h1`
 `
 
 const RightSide = styled.div`
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
     width: 50%;
     height: 400px;
 
 `
 
+const FormBox = styled.form`
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 const InputBox = styled.input`
     padding: 10px;
+
     margin: 20px 0;
     width: 90%;
     background-color: transparent;
@@ -66,7 +71,7 @@ function Form() {
               </ContactHeading>
             </LeftSide>
             <RightSide>
-                <form>
+                <FormBox>
                     <p>I'm insterested in....</p>
 
                     <div className="btns">
@@ -81,7 +86,7 @@ function Form() {
                     </div>
 
                     <button className="sendbtn">Send Message</button>
-                </form>
+                </FormBox>
             </RightSide>
         </ContactContainer>
     )
