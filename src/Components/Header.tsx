@@ -2,6 +2,8 @@
 import styled from 'styled-components'
 import LogoImg from "../assets/Group.png"
 import ThemeLogo from "../assets/Vector(1).png"
+import { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 const HeaderContainer = styled.header`
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -29,8 +31,22 @@ const Logo = styled.img`
 const MenuList = styled.ul`
 list-style:none;
 display:flex;
-    gap:20px;
-    align-items:center;
+gap:20px;
+align-items:center;
+
+@media (max-width:786px){
+    position: absolute;
+    top:80px ;
+    left: ${({ open }) => (open ? '0' : '-100%')};
+    /* flex-direction: column; */
+    width: 100%;
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* transition: left 0.3s ease-in-out; */
+}
     
 
 `
@@ -63,6 +79,20 @@ const MenuLink = styled.a`
 
  `
 
+
+const Hamburger = styled.div`
+    display: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+
+
+    
+    @media (max-width: 786px){
+        display: block;
+    }
+`
+
  
 
  
@@ -72,11 +102,19 @@ const MenuLink = styled.a`
 
 
 function Header() {
+
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
         <HeaderContainer>
             <Nav>
                 <Logo src={LogoImg} alt='Logo' />
-                <MenuList>
+
+                <Hamburger onClick={() => setMenuOpen(!menuOpen)}>
+                    {
+                        menuOpen? <FaTimes /> : <FaBars />
+                    }
+                </Hamburger>
+                <MenuList open={menuOpen}>
                     <MenuItem><MenuLink href='#about'>About</MenuLink></MenuItem>
                     <MenuItem><MenuLink href='#about'>Projects</MenuLink></MenuItem>
                     <MenuItem><MenuLink className='contact-btn' href='#about'>Contact</MenuLink></MenuItem>
