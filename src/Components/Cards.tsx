@@ -14,12 +14,17 @@ const CardContainer = styled.div`
 
 const Card = styled.div`
      height: 700px;
+     
      margin:50px  auto;
      text-align: center;
     width: 540px;
     /* background-color: #55e5a4; */
     border-radius: 10px;
     background-color: #26313F;
+
+    @media (max-width: 700px) {
+        max-width: 420px;
+    }
 
 
     img{
