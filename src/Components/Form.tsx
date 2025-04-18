@@ -113,7 +113,7 @@ const ContactBtns = styled.button`
 `
 
 
-function Form() {
+const Form: React.FC = () => {
     return (
         <SuperContainer id="contact">
             <ContactHeading>Get In Touch</ContactHeading>

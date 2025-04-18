@@ -105,7 +105,7 @@ const RightSide = styled.div`
 
 `
 
-function Hero() {
+const Hero: React.FC = () => {
     return (
         <div>
             <HeroContainer>

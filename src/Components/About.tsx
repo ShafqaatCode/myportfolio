@@ -3,6 +3,7 @@ import Vector from "../assets/Vector.png"
 import HtmlIcon from "../assets/langs/Frame71.png"
 import JSIcon from "../assets/langs/Frame72.png"
 import ReactIcon from "../assets/langs/Frame73.png"
+import React from "react";
 const AboutContainer = styled.div`
     display: flex;
     width: 85%;
@@ -92,7 +93,7 @@ const LanguageIcons = styled.div`
 
 
 
-function About() {
+const About: React.FC = () => {
     return (
         <AboutContainer id="about">
             <LeftSide>

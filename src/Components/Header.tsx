@@ -113,7 +113,7 @@ const Hamburger = styled.div`
 
 
 
-function Header() {
+const Header: React.FC = ()=> {
 
     const [menuOpen, setMenuOpen] = useState(false);
     return (

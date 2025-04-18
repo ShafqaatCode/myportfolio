@@ -6,6 +6,7 @@ import ReactIcon from "../assets/langs/Frame73.png"
 import FoodUi from "../assets/FoodUi.png";
 import WeatherImg from "../assets/weather.png";
 import ExpenseImg from "../assets/expense.png"
+import React from "react"
 
 const CardContainer = styled.div`
     border-radius: 20px;
@@ -183,7 +184,7 @@ const Button = styled.button`
 
 
 
-function Cards() {
+const Cards: React.FC = () =>  {
     return (
         <>
 

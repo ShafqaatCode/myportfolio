@@ -72,7 +72,7 @@ const IconsContainer = styled.div`
     /* border: 2px solid red; */
 `
 
-const Footer = () => {
+const Footer:React.FC = () => {
     return (
         <FooterContainer>
             <img src={LogoImg} alt="Logo" />
