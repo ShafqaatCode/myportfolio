@@ -119,7 +119,7 @@ const Card = styled.div`
 
 const SuperCard = styled.div`
 border-radius: 10px;
-    width: 88%;
+    width: 90%;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -127,7 +127,7 @@ border-radius: 10px;
     flex-wrap: wrap;
     margin: auto;
 
-    @media (max-width:700px) {
+    @media (max-width:1200px) {
         justify-content: center;
         text-align: center;
         /* border: 2px solid red; */
