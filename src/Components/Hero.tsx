@@ -57,6 +57,12 @@ p{  font-weight: 400;
     text-align: center;
     align-items: center;
     margin-top: 40px;
+    white-space: nowrap;
+
+    @media (max-width:786px)
+    {
+        gap:10px
+    }
 }
 
 .touchbtn{
@@ -88,6 +94,13 @@ const RightSide = styled.div`
     img{
         border-radius: 30%;
         width: 350px;
+    }
+
+    @media (max-width:786px)
+    {
+        img{
+            width: 300px;
+        }
     }
 
 `
