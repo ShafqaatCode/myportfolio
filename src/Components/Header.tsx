@@ -36,7 +36,11 @@ const Logo = styled.img`
 `
 
 
-const MenuList = styled.ul`
+interface MenuListProps {
+    $open: boolean;
+}
+
+const MenuList = styled.ul<MenuListProps>`
 list-style:none;
 display:flex;
 gap:20px;
