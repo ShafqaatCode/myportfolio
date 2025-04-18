@@ -112,7 +112,7 @@ function Hero() {
                 <LeftSide>
                     <h3>Shafqaat Hassan</h3>
                     <h1>Frontend & WP Developer.</h1>
-                    <p>I am a beginner in web development with skills in frontend technologies and WordPress. I can create
+                    <p>I am a beginner in web Tech with skills in frontend technologies and WordPress. I can create
                         responsive websites, design user-friendly interfaces, and work with websites data to analyze
                         designs. I am eager to learn and improve my skills to build better digital solutions.</p>
                     <div className="btn">

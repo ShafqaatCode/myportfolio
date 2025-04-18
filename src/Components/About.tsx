@@ -44,9 +44,9 @@ const RightSide = styled.div`
 @media (max-width: 700px)
 {
     p{
-        font-size: 16px !important;
-        font-weight: 400;
-        text-align: justify;
+        font-size: 18px !important;
+        font-weight: 500;
+        text-align: left;
         line-height: 1;
     }
 }
