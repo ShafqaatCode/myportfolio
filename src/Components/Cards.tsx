@@ -25,7 +25,7 @@ const Card = styled.div`
     background-color: #26313F;
 
     @media (max-width: 700px) {
-        max-width: 350px;
+        max-width: 330px;
         align-items: center;
 
         h1{
