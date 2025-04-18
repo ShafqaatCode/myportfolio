@@ -9,7 +9,8 @@ const HeaderContainer = styled.header`
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 color: white;
 padding: 2rem;
-/* max-width: 90%; */
+margin: auto;
+max-width: 90%;
 
 `
 
@@ -25,6 +26,13 @@ const Nav = styled.nav`
 const Logo = styled.img`
     width:40px;
     height:auto;
+@media (max-width: 786px)
+{
+
+    &.ThemeLogo {
+        display: none ;
+    }
+}
 `
 
 
@@ -37,7 +45,7 @@ align-items:center;
 @media (max-width:786px){
     position: absolute;
     top:80px ;
-    left: ${({ open }) => (open ? '0' : '-100%')};
+    left: ${(props) => (props.$open ? '0' : '-100%')};
     /* flex-direction: column; */
     width: 100%;
     background-color: #111;
@@ -93,10 +101,10 @@ const Hamburger = styled.div`
     }
 `
 
- 
 
- 
- 
+
+
+
 
 
 
@@ -111,16 +119,16 @@ function Header() {
 
                 <Hamburger onClick={() => setMenuOpen(!menuOpen)}>
                     {
-                        menuOpen? <FaTimes /> : <FaBars />
+                        menuOpen ? <FaTimes /> : <FaBars />
                     }
                 </Hamburger>
-                <MenuList open={menuOpen}>
+                <MenuList $open={menuOpen}>
                     <MenuItem><MenuLink href='#about'>About</MenuLink></MenuItem>
                     <MenuItem><MenuLink href='#about'>Projects</MenuLink></MenuItem>
                     <MenuItem><MenuLink className='contact-btn' href='#about'>Contact</MenuLink></MenuItem>
                 </MenuList>
 
-                <Logo src={ThemeLogo} />
+                <Logo className="ThemeLogo" src={ThemeLogo} />
 
 
             </Nav>

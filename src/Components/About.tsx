@@ -29,6 +29,11 @@ const LeftSide = styled.div`
         width: 350px;
     }
 
+    @media (max-width:786px)
+    {
+        order: 2;
+    }
+
 `
 
 const RightSide = styled.div`

@@ -133,6 +133,18 @@ const Intro = styled.div`
     margin: 40px 0;
 `
 
+const BtnContainer = styled.div`
+    display: flex;
+    align-items: center;
+    
+    button{
+        font-size: 1rem;
+        width: 100%;
+        margin: 0 4px;
+        white-space: nowrap;
+    }
+`
+
 const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
@@ -158,11 +170,11 @@ function Cards() {
 
         <Intro>
             <h1>Projects</h1>
-            <div className="btns">
+            <BtnContainer className="btns">
                 <Button>All Projects</Button>
                 <Button>FrontEnd</Button>
                 <Button>BackEnd</Button>
-            </div>
+            </BtnContainer>
         </Intro>
        
         <SuperCard>
