@@ -155,6 +155,13 @@ const BtnContainer = styled.div`
         margin: 0 4px;
         white-space: nowrap;
     }
+
+
+    @media (max-width:700px)
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }
 `
 
 const Button = styled.button`

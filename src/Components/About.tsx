@@ -32,11 +32,24 @@ const LeftSide = styled.div`
     @media (max-width:786px)
     {
         order: 2;
+        img{
+            width: 300px;
+        }
     }
 
 `
 
 const RightSide = styled.div`
+
+@media (max-width: 700px)
+{
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 1;
+    }
+}
     
     p{
         font-size: 22px;
