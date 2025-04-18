@@ -6,6 +6,8 @@ import ThemeLogo from "../assets/Vector(1).png"
 const HeaderContainer = styled.header`
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 color: white;
+padding: 2rem;
+/* max-width: 90%; */
 
 `
 
@@ -13,6 +15,7 @@ const Nav = styled.nav`
     display:flex;
     align-items:center;
     justify-content:space-between;
+    
    
 
 `
